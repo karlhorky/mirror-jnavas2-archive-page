@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Archive Page Extension Options</title>
+</head>
+
+<body>
+
+    <h3>Extension Options</h3>
+    <p style="margin-bottom: 0;"><strong>Open archive.today in</strong></p>
+	<p style="margin-bottom: 0; margin-top: 3pt">
+		<input type="radio" id="tabAdj" name="tabCtl" style="vertical-align: text-bottom; margin-left: 30px">
+		<label for="adj">new tab adjacent</label><br>
+		<input type="radio" id="tabEnd" name="tabCtl" style="vertical-align: text-bottom; margin-left: 30px">
+		<label for="end">new tab at end</label><br>
+		<input type="radio" id="tabAct" name="tabCtl" style="vertical-align: text-bottom; margin-left: 30px">
+		<label for="act">active for archive, adjacent for search</label><br>
+	</p>
+	<p style="margin-bottom: 0;"><strong>Activate new archive.today tab from</strong></p>
+    <p style="line-height: 150%; margin-left: 20pt; margin-top: 3pt">
+        <label><input id="cbButtonNew" tabindex="1" type="checkbox" style="vertical-align: text-bottom"> Toolbar Button</label><br>
+        <label><input id="cbPageNew" tabindex="2" type="checkbox" style="vertical-align: text-bottom"> Page Search</label><br>
+        <label><input id="cbArchiveNew" tabindex="3" type="checkbox" style="vertical-align: text-bottom"> Archive link</label><br>
+        <label><input id="cbSearchNew" tabindex="4" type="checkbox" style="vertical-align: text-bottom"> Search link</label>
+    </p>
+    <table>
+        <tr>
+            <td><button id="bSave" style="font-size: large">Save</button>
+                <script src="options.js"></script>
+            </td>
+            <td></td>
+            <td id="status" style="font-size: large">&nbsp;</td>
+        </tr>
+    </table>
+
+	<h3><strong>Note</strong>: CloudFlare DNS may not resolve<br>archive.today, 
+	so if you experience DNS<br>errors, try a different DNS service.</h3>
+
+</body>
+
+</html>
